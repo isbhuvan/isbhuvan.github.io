@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?dbrnwf');
+  src:  url('fonts/icomoon.eot?dbrnwf#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?dbrnwf') format('truetype'),
+    url('fonts/icomoon.woff?dbrnwf') format('woff'),
+    url('fonts/icomoon.svg?dbrnwf#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-kubernetes:before {
+  content: "\e901";
+}
+.icon-terraform:before {
+  content: "\e902";
+}
+.icon-python:before {
+  content: "\e903";
+}
+.icon-powershell:before {
+  content: "\e904";
+}
+.icon-microsoftazure:before {
+  content: "\e905";
+}
+.icon-jenkins:before {
+  content: "\e906";
+}
+.icon-docker:before {
+  content: "\e907";
+}
+.icon-ansible:before {
+  content: "\e908";
+}
+.icon-prometheus:before {
+  content: "\e909";
+}
+.icon-Bash_Logo_Colored .path1:before {
+  content: "\e90a";
+  color: rgb(255, 255, 255);
+}
+.icon-Bash_Logo_Colored .path2:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(40, 48, 55);
+}
+.icon-Bash_Logo_Colored .path3:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(77, 168, 37);
+}
+.icon-Bash_Logo_Colored .path4:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-terminal:before {
+  content: "\e792";
+}
+.icon-contact:before {
+  content: "\e85e";
+}
+.icon-portfolio:before {
+  content: "\e8df";
+}
+.icon-resume:before {
+  content: "\eda3";
+}
+.icon-about:before {
+  content: "\edbb";
+}
+.icon-redhat:before {
+  content: "\e62b";
+}
+.icon-javascript:before {
+  content: "\e845";
+}
+.icon-github:before {
+  content: "\e90b";
+}
+.icon-linux:before {
+  content: "\eb1c";
+}
+.icon-aws:before {
+  content: "\e914";
+}
+.icon-cv:before {
+  content: "\e900";
+}
+.icon-resume2:before {
+  content: "\e921";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-linkedin:before {
+  content: "\eaca";
+}
+.icon-circle-down:before {
+  content: "\ea43";
+}
+.icon-git:before {
+  content: "\eae7";
+}
+.icon-envelope2:before {
+  content: "\f0e0";
+}
