@@ -13,40 +13,41 @@
   <script src="scripts/particles.min.js"></script>
 </head>
 
-<body>
+<body class="bg-dark text-white m-0 p-0 overflow-hidden lh-base">
 
   <!-- Home Page-->
-  <div id="landing-page">
-
-    <!-- Home Page Borders -->
-    <div id="top-border" class="border"> </div>
-    <div id="right-border" class="border"> </div>
-    <div id="left-border" class="border"> </div>
-    <div id="bottom-border" class="border"> </div>
+  <div id="landing-page" class="position-relative d-flex flex-column justify-content-center w-100 min-vh-100">
 
     <!-- Particle JS for the home page backegorund animation -->
-    <div id="particles-js"></div>
+    <div id="particles-js" class="position-absolute w-100 h-100"></div>
+
+    <!-- Home Page Borders -->
+    <div id="lp-top-border" class="position-absolute bg-white lp-border"></div>
+    <div id="lp-right-border" class="position-absolute bg-white lp-border"></div>
+    <div id="lp-left-border" class="position-absolute bg-white lp-border"></div>
+    <div id="lp-bottom-border" class="position-absolute bg-white lp-border"></div>
 
     <!-- Profile badge: Photo and Social media -->
-    <div id="lp-content">
-      <img src="images/bhuvan_ai.png" alt="Bhuvaneshwaran">
-      <span id="name">BHUVANESHWARAN</span>
-      <div id="contact-icons">
-        <a class="circle" href="https://www.linkedin.com/in/isbhuvan/" target="_blank"><i class="icon-linkedin"></i></a>
-        <a class="circle" href="https://github.com/isbhuvan/" target="_blank"><i class="icon-github"></i></a>
+    <div id="lp-content" class="position-relative d-flex flex-column justify-content-center align-items-center">
+      <img src="images/bhuvan_ai.png" alt="Bhuvaneshwaran" class="rounded-circle">
+      <p class="d-block py-3">BHUVANESHWARAN</p>
+      <div id="lp-contact-icons" class="d-flex flex-wrap  justify-content-center align-items-center">
+        <a class="circle rounded-circle text-white d-flex justify-content-center align-items-center"
+          href="https://www.linkedin.com/in/isbhuvan/" target="_blank"><i class="icon-linkedin"></i></a>
+        <a class="circle rounded-circle text-white d-flex justify-content-center align-items-center"
+          href="https://github.com/isbhuvan/" target="_blank"><i class="icon-github"></i></a>
       </div>
     </div>
 
     <!-- Scroll Down arrow to view sections -->
-    <div class="scroll-arraow-container">
+    <!-- <div class="scroll-arrow-container position-absolute mb-0">
       <a href="#about">
-        <span id="arrow-one" class="scroll-arrow"></span>
-        <span id="arrow-two" class="scroll-arrow"></span>
-        <span id="arrow-three " class="scroll-arrow"></span>
+        <span id="lp-arrow-one" class="scroll-arrow d-block"></span>
+        <span id="lp-arrow-two" class="scroll-arrow d-block"></span>
+        <span id="lp-arrow-three " class="scroll-arrow d-block"></span>
       </a>
-    </div>
+    </div> -->
   </div>
-
 
   <script>
     /*Particle*/

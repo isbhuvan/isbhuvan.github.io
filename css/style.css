@@ -1,11 +1,6 @@
 /*-------------------------GLOBAL STYLES--------------------------------------------*/
 body {
-  background-color: #000;
   font-family: 'Lato', sans-serif;
-  color: #fff;
-  line-height: 25px;
-  padding: 0px;
-  margin: 0px;
   overflow-x: hidden;
 }
 
@@ -21,115 +16,49 @@ a {
 
 /*-------------------------LANDING PAGE--------------------------------------------*/
 #landing-page {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
   z-index: 10;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   overflow-y: hidden;
 }
 
 #particles-js {
   position: absolute;
-  width: 100%;
-  height: 100%;
   background: #000;
 }
 
-#lp-content img {
-  border: 2px dotted #fff;
-}
-
-#contact-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.circle {
-  padding: 12px;
-  margin: 10px 20px;
-  border: 2px dotted #fff;
-  border-radius: 50%;
-  color: #fff;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.circle:hover {
-  background: #fff;
-  color: #000;
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-
-#lp-content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#lp-content img {
-  height: 250px;
-  width: 250px;
-  border-radius: 125px;
-  text-align: center;
-}
-
-#name {
-  display: block;
-  font-weight: 400;
-  font-size: 2em;
-  padding-bottom: 30px;
-  padding-top: 30px;
-}
-
-.border {
-  position: absolute;
-  background: #fff;
+.lp-border {
   animation: createBox 9s;
   z-index: 5;
 }
 
-#top-border,
-#bottom-border {
+#lp-top-border,
+#lp-bottom-border {
   left: 10%;
   height: 1px;
   width: 80%;
 }
 
-#top-border {
+#lp-top-border {
   top: 40px;
 }
 
-#bottom-border {
+#lp-bottom-border {
   bottom: 40px;
 }
 
-#left-border,
-#right-border {
+#lp-left-border,
+#lp-right-border {
   top: 10%;
   width: 1px;
   height: 80%;
 }
 
-#left-border {
+#lp-left-border {
   left: 40px;
 }
 
-#right-border {
+#lp-right-border {
   right: 40px;
 }
-
 
 @keyframes createBox {
   from {
@@ -141,16 +70,38 @@ a {
   }
 }
 
-.scroll-arraow-container {
-  margin-bottom: 0;
-  position: absolute;
+#lp-content img {
+  height: 250px;
+  width: 250px;
+  border: 2px dotted #fff;
+}
+
+#lp-content p {
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.circle {
+  padding: 12px;
+  margin: 10px 20px;
+  border: 2px dotted #fff;
+}
+
+.circle:hover {
+  background: #fff;
+  color: #000;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.scroll-arrow-container {
   z-index: 5;
   bottom: 10%;
   left: 50%;
 }
 
 .scroll-arrow {
-  display: block;
   width: 16px;
   height: 16px;
   border-right: 2px solid white;
@@ -161,7 +112,7 @@ a {
   transform: rotate(45deg);
 }
 
-#arrow-one {
+#lp-arrow-one {
   margin-top: 1px;
   -webkit-animation-delay: .1s;
   -moz-animation-delay: .1s;
@@ -170,15 +121,15 @@ a {
   animation-delay: alternate;
 }
 
-#arrow-one,
-#arrow-two,
-#arrow-three {
+#lp-arrow-one,
+#lp-arrow-two,
+#lp-arrow-three {
   -webkit-animation: arrow-scroll 1s infinite;
   -moz-animation: arrow-scroll 1s infinite;
   animation: arrow-scroll 1s infinite;
 }
 
-#arrow-two {
+#lp-arrow-two {
   margin-top: -6px;
   -webkit-animation-delay: .2s;
   -moz-animation-delay: .2s;
@@ -187,7 +138,7 @@ a {
   animation-direction: alternate;
 }
 
-#arrow-three {
+#lp-arrow-three {
   margin-top: -6px;
   -webkit-animation-delay: .3s;
   -moz-animation-delay: .3s;
