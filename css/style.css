@@ -39,6 +39,10 @@ a {
   background: #000;
 }
 
+#lp-content img {
+  border: 2px dotted #fff;
+}
+
 #contact-icons {
   display: flex;
   justify-content: center;
