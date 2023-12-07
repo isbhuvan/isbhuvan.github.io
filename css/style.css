@@ -1,89 +1,137 @@
 /*-------------------------GLOBAL STYLES--------------------------------------------*/
 body {
-    background-color: #000;
-    font-family: 'Lato', sans-serif;
-    color: #fff;
-    line-height: 25px;
-    padding: 0px;
-    margin: 0px;
-    overflow-x: hidden;
+  background-color: #000;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  line-height: 25px;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    color: #1976D2;
-    text-decoration: none;
-    outline: none;
+  color: #1976D2;
+  text-decoration: none;
+  outline: none;
 }
 
 /*-------------------------LANDING PAGE--------------------------------------------*/
 #landing-page {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    z-index: 10;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 10;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
 }
 
 #contact-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .circle {
-    padding: 12px;
-    margin: 10px 20px;
-    border: 2px dotted #fff;
-    border-radius: 50%;
-    color: #fff;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+  padding: 12px;
+  margin: 10px 20px;
+  border: 2px dotted #fff;
+  border-radius: 50%;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .circle:hover {
-    background: #fff;
-    color: #000;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+  background: #fff;
+  color: #000;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 #lp-content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #lp-content img {
-    height: 250px;
-    width: 250px;
-    border-radius: 125px;
-    text-align: center;
+  height: 250px;
+  width: 250px;
+  border-radius: 125px;
+  text-align: center;
 }
 
 #name {
-    display: block;
-    font-weight: 400;
-    font-size: 2em;
-    padding-bottom: 30px;
-    padding-top: 30px;
+  display: block;
+  font-weight: 400;
+  font-size: 2em;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.border {
+  position: absolute;
+  background: #fff;
+  animation: createBox 9s;
+  z-index: 5;
+}
+
+#top-border,
+#bottom-border {
+  left: 10%;
+  height: 1px;
+  width: 80%;
+}
+
+#top-border {
+  top: 40px;
+}
+
+#bottom-border {
+  bottom: 40px;
+}
+
+#left-border,
+#right-border {
+  top: 10%;
+  width: 1px;
+  height: 80%;
+}
+
+#left-border {
+  left: 40px;
+}
+
+#right-border {
+  right: 40px;
+}
+
+
+@keyframes createBox {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
 }
