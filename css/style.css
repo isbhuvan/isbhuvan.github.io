@@ -229,3 +229,47 @@ a {
     opacity: 1;
   }
 }
+
+/*-------------------------MOBILE NAVBAR--------------------------------------------*/
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+}
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem;
+}
+
+/*-------------------------SIDEBAR--------------------------------------------*/
+
+.sidebar {
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  background-color: #1e1e1e;
+}
+
+.sidebar-name h4{
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.sidebar .nav-link {
+  letter-spacing: 2px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.sidebar .nav-link.active {
+  color: #2470dc;
+}
+
+.nav-link:hover {
+  color: #1976D2;
+}
+
+/*-------------------------SECTION--------------------------------------------*/
+
+section {
+  min-height: 100vh;
+}
