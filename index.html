@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
   <link href="fonts/style.css" rel="stylesheet" type="text/css">
   <script src="scripts/particles.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body class="text-white m-0 p-0 lh-base">
@@ -44,7 +45,7 @@
       <a href="#about">
         <span id="lp-arrow-one" class="scroll-arrow d-block"></span>
         <span id="lp-arrow-two" class="scroll-arrow d-block"></span>
-        <span id="lp-arrow-three " class="scroll-arrow d-block"></span>
+        <span id="lp-arrow-three" class="scroll-arrow d-block"></span>
       </a>
     </div>
   </div>
@@ -60,43 +61,52 @@
   <div class="container-fluid">
     <div class="row">
       <nav id="sidebarMenu"
-        class="col-md-3 col-lg-2 d-md-flex sidebar collapse justify-content-center flex-column position-sticky top-0 start-0 bottom-0 p-0 vh-100">
+        class="col-md-3 col-lg-2 d-md-flex sidebar collapse justify-content-evenly flex-column position-sticky top-0 start-0 bottom-0 p-0 vh-100">
         <div class="sidebar-name text-center">
           <h4>BHUVAN</h4>
         </div>
+        
         <div class="position-sticky pt-3 mt-5 align-self-center">
           <ul class="nav flex-column ">
-            <li class="nav-item">
+            <li class="nav-item py-1">
               <a class="nav-link" href="#about">
                 <i class="icon-about"></i>
                 ABOUT
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item py-1">
               <a class="nav-link" href="#portfolio">
                 <i class="icon-portfolio"></i>
                 PORTFOLIO
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item py-1">
               <a class="nav-link" href="#skills">
                 <i class="icon-terminal"></i>
                 SKILLS
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item py-1">
               <a class="nav-link" href="#resume">
                 <i class="icon-resume"></i>
                 RESUME
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item py-1">
               <a class="nav-link" href="#">
                 DOWNLOAD CV
               </a>
             </li>
           </ul>
         </div>
+
+        <div id="lp-contact-icons" class="d-flex flex-wrap  justify-content-center align-items-center">
+          <a class="circle rounded-circle text-white d-flex justify-content-center align-items-center"
+            href="https://www.linkedin.com/in/isbhuvan/" target="_blank"><i class="icon-linkedin"></i></a>
+          <a class="circle rounded-circle text-white d-flex justify-content-center align-items-center"
+            href="https://github.com/isbhuvan/" target="_blank"><i class="icon-github"></i></a>
+        </div>
+        
       </nav>
 
       <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4" data-bs-spy="scroll" data-bs-target="#sidebarMenu">
@@ -106,15 +116,16 @@
             <div class="row">
               <div class="col-md-7">
                 <h2 id="about-title" class="text-center py-5">HELLO THERE!</h2>
-                <p>I'm Bhuvan, a 30-year-old IT enthusiast with over 8 years of hands-on experience in the dynamic realm of
-                Cloud engineering and automation.</p>
-                <p> I currently work at Cognizant, where I spend most of my time working with awesome peoples as Cloud Engineer.</p>
+                <p>I'm Bhuvan, a 30-year-old IT enthusiast with over 8 years of hands-on experience in the dynamic realm
+                  of
+                  Cloud engineering and automation.</p>
+                <p> I currently work at Cognizant, where I spend most of my time working with awesome peoples as Cloud
+                  Engineer.</p>
                 <p>In my journey through the ever-evolving landscape of IT, I've honed my skills not just as a
                   proficient Cloud engineer but as a dedicated worker and relentless learner. My passion for technology
                   is not just a profession; it's a continuous adventure, and I'm always eager to explore new horizons.
                 </p>
-                
-               
+
                 <div class="contact-detail pt-5">
                   <h4>CONTACT DETAILS</h4>
                   <ul>
@@ -132,12 +143,456 @@
         </section>
 
         <section id="portfolio" class="pt-5">
+          <div class="section-header text-center">
+            <h2 class="text-center"><i class="icon-portfolio"></i>PORTFOLIO</h2>
+            <p class="text-center"><em>The reward for work done is oppurtunity to do more</em></p>
+            <hr class="mx-auto">
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-3 project">
+                <div class="ribbon"><span>Terraform</span></div>
+                <p>Title of the project and with link.</p>
+                <button class="button"><span class="button-span">Know More</span></button>
+              </div>
+              <div class="col-md-3 project">
+                <div class="ribbon"><span>PowerShell</span></div>
+                <p>Title of the project and with link.</p>
+                <button class="button"><span class="button-span">Know More</span></button>
+              </div>
+              <div class="col-md-3 project">
+                <div class="ribbon"><span>Go</span></div>
+                <p>Title of the project and with link.</p>
+                <button class="button"><span class="button-span">Know More</span></button>
+              </div>
+              <div class="col-md-3 project">
+                <div class="ribbon"><span>Terraform</span></div>
+                <p>Title of the project and with link.</p>
+                <button class="button"><span class="button-span">Know More</span></button>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section id="skills" class="pt-5">
+          <div class="section-header text-center">
+            <h2 class="text-center"><i class="icon-terminal"></i>
+              SKILLS & EXPERTISE
+            </h2>
+            <p class="text-center"><em>A key to vital life is eagerness to learn and willingness to change</em></p>
+            <hr class="mx-auto">
+          </div>
+          <div class="container">
+            <ul id="skill-set">
+              <li class="skill">
+                <div class="skill-name">
+                  <i class='icon-aws'></i>
+                  <p>AWS</p>
+                </div>
+              </li>
+              <li class="skill">
+                <div class="skill-name">
+                  <i class='icon-microsoftazure'></i>
+                  <p>Azure</p>
+                </div>
+              </li>
+              <li class="skill">
+                <div class="skill-name">
+                  <i class='icon-linux'></i>
+                  <p>Linux</p>
+                </div>
+              </li>
+              <li class="skill">
+                <div class="skill-name">
+                  <i class='icon-powershell'></i>
+                  <p>PowerShell</p>
+                </div>
+              </li>
+              <li class="skill">
+                <div class="skill-name"><i class='icon-terminal'></i>
+                  <p>Bash</p>
+                </div>
+              </li>
+              <li class="skill">
+                <div class="skill-name"><i class='icon-python'></i>
+                  <p>Python</p>
+                </div>
+              </li>
+              <li class="skill">
+                <div class="skill-name"><i class='icon-javascript'></i>
+                  <p>JavaScript</p>
+                </div>
+              </li>
+              <li class="skill">
+                <div class="skill-name"><i class='icon-terraform'></i>
+                  <p>Terraform</p>
+                </div>
+              </li>
+              <li class="skill">
+                <div class="skill-name"><i class='icon-ansible'></i>
+                  <p>Ansible</p>
+                </div>
+              </li>
+              <li class="skill">
+                <div class="skill-name"><i class='icon-kubernetes'></i>
+                  <p>Kubernetes</p>
+                </div>
+              </li>
+              <li class="skill">
+                <div class="skill-name"><i class='icon-jenkins'></i>
+                  <p>Jenkins</p>
+                </div>
+              </li>
+              <li class="skill">
+                <div class="skill-name"><i class='icon-docker'></i>
+                  <p>Docker</p>
+                </div>
+              </li>
+              <li class="skill">
+                <div class="skill-name"><i class='icon-git'></i>
+                  <p>Git</p>
+                </div>
+              </li>
+              <li class="skill">
+                <div class="skill-name"><i class='icon-prometheus'></i>
+                  <p>Prometheus</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section id="resume" class="pt-5">
+          <div class="section-header text-center">
+            <h2 class="text-center"><i class="icon-resume"></i>RESUME</h2>
+            <p class="text-center"><em>Everyday is a new experience</em></p>
+            <hr class="mx-auto">
+          </div>
+
+          <div class="container">
+            <div id="work-experience">
+              <h3>Work Experience<br>2015 - NOW</h3>
+
+              <div class="resume-item">
+                <span class="resume-year">2023 - NOW</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">INFRA DEV SPECIALIST - COGNIZANT</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Responsibilities:
+                      <br>Automate the provisioning, configuration, and management of cloud services.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="resume-item">
+                <span class="resume-year">2020 - 2023</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">INFORMATION TECHNOLOGY ANALYST - TCS</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Responsibilities:
+                      <br>Automate the provisioning, configuration, and management of cloud services.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="resume-item">
+                <span class="resume-year">2015 - 2020</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">SYSTEM ENGINEER- TCS</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Responsibilities:
+                      <br>Automate the provisioning, configuration, and management of cloud services.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="resume-item">
+                <span class="resume-year">2015 - 2017</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">ASSISTANT SYSTEM ENGINEER- TCS</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Responsibilities:
+                      <br>Management of Windows and RHEL Servers for a US based Company
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="resume-item">
+                <span class="resume-year">2014-2015</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">WEB DESIGNER - SASTRA UNIVERSITY</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Responsibilities:
+                      <br>Developed a website for Colosseum National Level Sports Fest'15 hosting 10 games
+                      with more than 1500 participants from different geographies of the country.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="education">
+              <h3>My Education<br>2011 - 2015</h3>
+              <div class="resume-item">
+                <span class="resume-year">2010 - 2015</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">BACHELORS DEGREE - SASTRA UNIVERSITY</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Completed Bachelors degree in Computer Science & Engineering in first class with
+                      distinction.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="certifications">
+              <h3>Certifications<br>2016-Now</h3>
+
+              <div class="resume-item">
+                <span class="resume-year">SEP 2018</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">AWS CERTIFIED CLOUD PRACTITIONER</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Issued by Amazon Web Services.Credential ID 5VN9T5MK1111QJCZ</p>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-item">
+                <span class="resume-year">DEC 2017</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">RED HAT CERTIFIED ENGINEER</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Issued by Red Hat.Credential ID 170-247-118</p>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-item">
+                <span class="resume-year">NOV 2017</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">RED HAT CERTIFIED SYSTEM ADMINISTRATOR</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Issued by Red Hat.Credential ID 170-247-118</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="resume-item">
+                <span class="resume-year">APR 2016</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">ITIL® FOUNDATION CERTIFICATE IN IT SERVICE MANAGEMENT</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Issued by AXELOS Global Best Practice. Credential ID 5667765.20527156</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="volunteer">
+              <h3>Volunteer<br>2011 - NOW</h3>
+              <div class="resume-item">
+                <span class="resume-year">2015</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">HEAD OF HOSPITALITY-KURUKSASTRA</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Kuruksastra is one of the premier college level events in South India, and is hosted
+                      annually by SASTRA University. The fest boasts of a collection of highly competitive
+                      events, each set to the taste and interest of various performers, with each event being
+                      judged by top notch artistes of the related fields</p>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-item">
+                <span class="resume-year">2014-2015</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">HEAD OF PUBLIC RELATIONS - COLOSSEUM'15</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Colosseum'15-National Level Sports Fest conducted by SASTRA University.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-item">
+                <span class="resume-year">2013-2015</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">STUDENT VOLUNTEER</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Share your hands - Student group for Social Activities started in SASTRA University.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="awards" class="resume-partition">
+              <h3>Honors and Awards<br>2011 - NOW</h3>
+              <div class="resume-item">
+                <span class="resume-year">JUL 2023</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">Technical Excellence Award</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Awarded in recognition of completing 5 years of dedicated service in Tata Consultancy
+                      Services.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-item">
+                <span class="resume-year">Mar 2022</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">Learning Achievement Award</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Awarded in recognition of completing 5 years of dedicated service in Tata Consultancy
+                      Services.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-item">
+                <span class="resume-year">JAN 2022</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">Special Initiative Award</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Awarded in recognition of completing 5 years of dedicated service in Tata Consultancy
+                      Services.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-item">
+                <span class="resume-year">NOV 2021</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">Special Initiative Award</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Awarded in recognition of completing 5 years of dedicated service in Tata Consultancy
+                      Services.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-item">
+                <span class="resume-year">Feb 2021</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">Special Initiative Award</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Awarded in recognition of completing 5 years of dedicated service in Tata Consultancy
+                      Services.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-item">
+                <span class="resume-year">JUN 2020</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">SERVICE & COMMITMENT AWARD</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Awarded in recognition of completing 5 years of dedicated service in Tata Consultancy
+                      Services.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-item">
+                <span class="resume-year">NOV 2019</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">APPLAUSE FOR TEAM AWARD</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Given by Tata Consultancy Services for exemplary work.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-item">
+                <span class="resume-year">JUN 2018</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">ON THE SPOT AWARD</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Given by Tata Consultancy Services for exemplary work.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-item">
+                <span class="resume-year">JUN 2018</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">SERVICE & COMMITMENT AWARD</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Awarded in recognition of completing 3 years of dedicated service in Tata Consultancy
+                      Services.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-item">
+                <span class="resume-year">NOV 2017</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">CERTIFICATE OF EXCELLENCE</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Awarded for Outstanding performance and lasting contributions to PETCO Operations
+                      from
+                      Rudy Kulas, former Vice president of Infrastructure and IT operations in Petco
+                      Animal
+                      Supplies, Inc.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-item">
+                <span class="resume-year">AUG 2017</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">ON THE SPOT AWARD</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Given by Tata Consultancy Services for exemplary work.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-item">
+                <span class="resume-year">JAN 2017</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">ON THE SPOT AWARD</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Given by Tata Consultancy Services for exemplary work.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-item">
+                <span class="resume-year">OCT 2015</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">ON THE SPOT AWARD</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Given by Tata Consultancy Services for exemplary work.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-item">
+                <span class="resume-year">2013</span>
+                <div class="resume-btn"><a class="plus"></a></div>
+                <div class="profile">
+                  <h4 class="profile-title">DEAN'S LISTER</h4>
+                  <div class="profile-detail text-grey">
+                    <p>Given by SASTRA University.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
       </main>
@@ -148,10 +603,26 @@
   <script>
     /*Particle*/
     particlesJS("particles-js", { particles: { number: { value: 350, density: { enable: !0, value_area: 800 } }, color: { value: "#1976D2" }, shape: { type: "circle", stroke: { width: 0, color: "#000000" }, polygon: { nb_sides: 10 }, image: { src: "img/github.svg", width: 100, height: 100 } }, opacity: { value: .5, random: !1, anim: { enable: !1, speed: 1, opacity_min: .1, sync: !1 } }, size: { value: 3, random: !0, anim: { enable: !1, speed: 40, size_min: .1, sync: !1 } }, line_linked: { enable: !0, distance: 150, color: "#1976D2", opacity: .4, width: 1 }, move: { enable: !0, speed: 6, direction: "none", random: !1, straight: !1, out_mode: "out", bounce: !1, attract: { enable: !1, rotateX: 600, rotateY: 1200 } } }, interactivity: { detect_on: "canvas", events: { onhover: { enable: !0, mode: "repulse" }, resize: !0 }, modes: { grab: { distance: 400, line_linked: { opacity: 1 } }, repulse: { distance: 50, duration: .4 }, push: { particles_nb: 4 }, remove: { particles_nb: 2 } } }, retina_detect: !0 });
+    /*Resume*/
+    $(".resume-btn").click(function () {
+      $header = $(this);
+      $content = $header.siblings(".profile").children(".profile-detail");
+      $content.slideToggle(500, function () {
+        if ($content.is(":visible")) {
+          $header.find("a").removeClass('plus');
+          $header.find("a").addClass('minus');
+        }
+        else {
+          $header.find("a").removeClass('minus');
+          $header.find("a").addClass('plus');
+        }
+      });
+    });
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+
 </body>
 
 </html>
