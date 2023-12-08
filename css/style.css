@@ -2,6 +2,7 @@
 body {
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
+  background-color: #000;
 }
 
 li {
@@ -272,4 +273,17 @@ a {
 
 section {
   min-height: 100vh;
+}
+
+#about-title {
+  font-size: 35px;
+  font-weight: 400;
+  color: #1976D2;
+  text-align: center;
+  line-height: 32px;
+}
+
+.contact-detail ul li {
+  padding: 2px;
+  font-size: 16px;
 }
