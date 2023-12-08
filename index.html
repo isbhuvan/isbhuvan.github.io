@@ -13,7 +13,7 @@
   <script src="scripts/particles.min.js"></script>
 </head>
 
-<body class="bg-dark text-white m-0 p-0 overflow-hidden lh-base">
+<body class="bg-dark text-white m-0 p-0 lh-base">
 
   <!-- Home Page-->
   <div id="landing-page" class="position-relative d-flex flex-column justify-content-center w-100 min-vh-100">
@@ -40,14 +40,81 @@
     </div>
 
     <!-- Scroll Down arrow to view sections -->
-    <!-- <div class="scroll-arrow-container position-absolute mb-0">
+    <div class="scroll-arrow-container position-absolute mb-0">
       <a href="#about">
         <span id="lp-arrow-one" class="scroll-arrow d-block"></span>
         <span id="lp-arrow-two" class="scroll-arrow d-block"></span>
         <span id="lp-arrow-three " class="scroll-arrow d-block"></span>
       </a>
-    </div> -->
+    </div>
   </div>
+
+  <header class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow col-md-3 col-lg-2 me-0">
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+      data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <p><a class="navbar-brand d-lgs-none d-xl-none px-3 d-block text-center" href="#">BHUVAN</a></p>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-flex sidebar collapse justify-content-center flex-column position-sticky top-0 start-0 bottom-0 p-0 vh-100">
+        <div class="sidebar-name text-center">
+          <h4>BHUVAN</h4>
+        </div>
+        <div class="position-sticky pt-3 mt-5 align-self-center">
+          <ul class="nav flex-column ">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">
+                <i class="icon-about"></i>
+                ABOUT
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">
+                <i class="icon-portfolio"></i>
+                PORTFOLIO
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">
+                <i class="icon-terminal"></i>SKILLS
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">
+                <i class="icon-resume"></i>
+                RESUME
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                DOWNLOAD CV
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4" data-bs-spy="scroll" data-bs-target="#sidebarMenu">
+
+        <section id="about" class="pt-5">
+        </section>
+
+        <section id="portfolio" class="pt-5">
+        </section>
+
+        <section id="skills" class="pt-5">
+        </section>
+
+        <section id="resume" class="pt-5">
+        </section>
+
+      </main>
+    </div>
+  </div>
+
 
   <script>
     /*Particle*/
