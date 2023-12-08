@@ -14,6 +14,29 @@ a {
   outline: none;
 }
 
+/*----------------------------------Scrollbar-----------------------------------*/
+@media (max-width: 992px) {
+  ::-webkit-scrollbar {
+      display: none;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar:hover {
+  background-color: #a1a1a1;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 45px;
+  background-color: #1E88E5;
+  border-radius: 50px;
+}
+
+
 /*-------------------------LANDING PAGE--------------------------------------------*/
 #landing-page {
   z-index: 10;
