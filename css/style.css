@@ -309,13 +309,25 @@ hr {
 .project {
   background: #1e1e1e;
   box-shadow: 0 0 15px rgba(0, 0, 200, .1);
-  margin: 10px;
   border-style: inset;
-  width: 250px;  
+  transition: all 0.2s ease;
+  margin: 10px;
+  max-width: 250px;
 }
 
-.project p {
-  padding: 45px 35px 20px 20px;
+.project:hover{
+  transform: scale(1.01);
+}
+
+.project h4 {
+  padding: 45px 35px 10px 20px;
+  font-size: 1.1em;
+  margin-bottom: 0%;
+}
+
+.project hr {
+  width: 80%;
+  color: #fff;
 }
 
 .ribbon {
@@ -352,11 +364,6 @@ hr {
   border: 1px dashed rgba(255, 255, 255, 0.9);
   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
-.project li a {
-  padding: 70px 10px;
-  font-size: 30px;
 }
 
 .button {
