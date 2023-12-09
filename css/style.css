@@ -279,15 +279,6 @@ h3,h4 {
   min-height: 100vh;
 } */
 
-.section-header span {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  width: 150px;
-  height: 2px;
-  background-color: #1E88E5;
-}
-
 hr {
   display: block;
   color: #1E88E5;
@@ -299,28 +290,24 @@ hr {
 .section-header p {
   color: #a1a1a1;
   font-size: 18px;
-  font-style: italic;
-  text-align: center;
 }
 
 .section-header h2, #about-title {
   font-size: 35px;
   font-weight: 400;
   color: #1976D2;
-  text-align: center;
   line-height: 32px;
 }
+
 .contact-detail ul li {
   padding: 2px;
   font-size: 16px;
 }
 
 .project {
-  position: relative;
   background: #1e1e1e;
   box-shadow: 0 0 15px rgba(0, 0, 200, .1);
   margin: 10px;
-  color: white;
   border-style: inset;
   width: 250px;  
 }
@@ -328,29 +315,19 @@ hr {
 .project p {
   padding: 40px 20px 50px 20px;
   padding-bottom: 50px;
-  text-align: center;
 }
 
 .ribbon {
   width: 150px;
   height: 150px;
-  overflow: hidden;
-  position: absolute;
-  top: 0px;
-  right: 0px;
 }
 
 .ribbon span {
-  position: absolute;
   top: 20px;
-  display: block;
   width: 190px;
   padding: 1px 0;
   background-color: #1976D2;
-  color: #fff;
   font: 15px 'Lato', sans-serif;
-  text-transform: uppercase;
-  text-align: center;
   transform: rotate(30deg);
 }
 
@@ -382,13 +359,10 @@ hr {
 }
 
 .button {
-  position: absolute;
   bottom: 5px;
   border-radius: 4px;
   border: none;
   background-color: #1976D2;
-  color: #FFFFFF;
-  text-align: center;
   padding: 10px 5px 10px 5px;
   width: 120px;
   transition: all 0.5s;
@@ -429,7 +403,6 @@ hr {
   width: 70%;
   margin: 0 auto;
   padding: 30px;
-  
 }
 
 #skill-set:after {
@@ -444,7 +417,6 @@ hr {
   overflow: hidden;
   visibility: hidden;
   outline: 1px solid transparent;
-  
   -webkit-transform: rotate(-60deg) skewY(30deg) translatez(-1px);
   -ms-transform: rotate(-60deg) skewY(30deg) translatez(-1px);
   transform: rotate(-60deg) skewY(30deg) translatez(-1px);
@@ -462,12 +434,10 @@ hr {
   height: 100%;
   overflow: hidden;
   background-color: #1e1e1e;
-  
   -webkit-transform: skewY(-30deg) rotate(60deg);
   -ms-transform: skewY(-30deg) rotate(60deg);
   transform: skewY(-30deg) rotate(60deg);
 }
-
 
 .skill p {
   text-align: center;
@@ -480,6 +450,7 @@ hr {
   left: 50%;
   transform: translate(-50%,-60%);
 }
+
 .skill-name i {
   color: #1976D2;
   position: absolute;
@@ -490,9 +461,7 @@ hr {
   opacity: 0.4;
 }
 
-
 /*** SPACING AND SIZING *****************************************************************/
-
 @media (min-width: 1201px) {
   /* <- 5-4  hexagons per row */
   .skill {
