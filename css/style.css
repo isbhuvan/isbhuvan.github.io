@@ -607,25 +607,29 @@ hr {
 #resume  {
   padding-bottom: 50px;
 }
+
 #resume h4 {
   text-align: center;
   margin: 0%;
   padding-left: 5px;
 }
+
 @media (min-width: 768px) {
   #resume h4 {
       text-align: left;
   }
 }
-#work-experience,#volunteer,#awards,#education,#certifications {
+
+#work-experience,#volunteer,#education,#certifications {
   margin-top: 50px;
-  
 }
+
 .resume-item {
   position: relative;
   margin-bottom: 40px;
   
 }
+
 @media (min-width: 768px) {
   .resume-item:before {
       position: absolute;
@@ -637,12 +641,14 @@ hr {
       border-left: 1px dashed #484848;
   }
 }
+
 .resume-item:last-child {
   margin-bottom: 0;
 }
 .resume-item:last-child:before {
   display: none;
 }
+
 .resume-year {
   display: block;
   position: relative;
@@ -657,6 +663,7 @@ hr {
   font-weight: 700;
   border-radius: 4px;
 }
+
 @media (min-width: 568px) {
   .resume-item {
       margin-bottom: 20px;
@@ -668,6 +675,7 @@ hr {
       margin: 0;
   }
 }
+
 .resume-btn {
   position: absolute;
   z-index: 5;
@@ -683,6 +691,7 @@ hr {
       display: none;
   }
 }
+
 .resume-btn  a {
   display: block;
   position: absolute;
@@ -691,6 +700,7 @@ hr {
   width: 40px;
   height: 40px;
 }
+
 .resume-btn  a.minus:before {
   display: block;
   position: absolute;
@@ -706,6 +716,7 @@ hr {
   font-weight: 700;
   text-align: center;
 }
+
 .resume-btn  a.plus:after {
   display: block;
   position: absolute;
@@ -725,34 +736,48 @@ hr {
 .profile {
   padding: 10px 0px 10px 0;
   border: 1px solid #6e6e6e;
-  
 }
+
 @media (min-width: 568px) {
   .profile {
       width: calc(100% - 140px);
       margin-left: 140px;
   }
 }
+
 @media (min-width: 768px) {
   .profile {
       width: calc(100% - 210px);
       margin-left: 210px;
   }
 }
+
 @media (max-width: 567px) {
   .profile-title {
       padding-top: 20px;
   }
 }
+
 .profile-detail {
   padding-top: 5px;
   border-top: none;
 }
+
 @media (min-width: 768px) {
   .profile-detail {
       display: none;
   }
 }
+
 .profile-detail p {
   padding: 5px;
+}
+
+h3 {
+  margin: 20px 0;
+}
+
+.resume-item li {
+  list-style-position: outside;
+  list-style-type: square;
 }
