@@ -714,45 +714,31 @@ section hr {
   border-radius: 4px;
 }
 
-.resume-btn a {
+
+.resume-btn a,
+.resume-btn a[class="plus"]::after,
+.resume-btn a.plus.collapsed::after
+{
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 40px;
   height: 40px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  z-index: 15;
+  line-height: 38px;
+  color: #fff;
 }
 
-.resume-btn a.plus:after {
-  display: block;
-  position: absolute;
-  z-index: 15;
+.resume-btn a[class="plus"]::after {
+  content: '-'; 
+}
+
+.resume-btn a.plus.collapsed::after {
   content: '+';
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  line-height: 38px;
-  color: #fff;
-  font-size: 30px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.resume-btn a.minus:before {
-  display: block;
-  position: absolute;
-  z-index: 15;
-  content: '-';
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  line-height: 38px;
-  color: #fff;
-  font-size: 30px;
-  font-weight: 700;
-  text-align: center;
 }
 
 .profile {
