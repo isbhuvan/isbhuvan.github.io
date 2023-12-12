@@ -20,39 +20,41 @@
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
   <link href="fonts/style.css" rel="stylesheet" type="text/css">
-  <script src="scripts/particles.min.js"></script>
 </head>
 
 <body class="text-white m-0 p-0 lh-base">
 
   <!-- Home Page-->
-  <div id="landing-page" class="position-relative d-flex flex-column justify-content-center w-100 min-vh-100">
+  <div id="landing-page" class="d-flex flex-column justify-content-center align-items-center w-100 min-vh-100">
+    <!-- Profile badge: Photo and Social media -->
+    <div id="lp-content" class="d-flex align-items-center justify-content-center flex-column">
 
-    <!-- Particle JS for the home page backegorund animation -->
+      <img src="images/bhuvan_ai.png" alt="Bhuvaneshwaran" class="rounded-circle" style="height: 250px;width: 250px;">
+      <h1 class="d-block py-3">BHUVANESHWARAN</h1>
+      <div id="lp-contact-icons" class="d-flex">
+        <a class="circle rounded-circle text-white d-flex"
+          href="https://www.linkedin.com/in/isbhuvan/" aria-label="LinkedIn" target="_blank"><i
+            class="icon-linkedin"></i></a>
+        <a class="circle rounded-circle text-white d-flex"
+          href="mailto:isbhuvan@outlook.com" aria-label="email" target="_blank"><i class="icon-envelope2"></i></a>
+        <a class="circle rounded-circle text-white d-flex"
+          href="https://github.com/isbhuvan/" aria-label="GitHub" target="_blank"><i class="icon-github"></i></a>
+      </div>
+
+    </div>
+
+    <!-- Particle JS for the home page backegorund animation
     <div id="particles" class="position-absolute w-100 h-100">
       <canvas class="particles-js-canvas-el">
 
       </canvas>
-    </div>
+    </div> -->
 
     <!-- Home Page Borders -->
     <div id="lp-top-border" class="position-absolute bg-white lp-border"></div>
     <div id="lp-right-border" class="position-absolute bg-white lp-border"></div>
     <div id="lp-left-border" class="position-absolute bg-white lp-border"></div>
     <div id="lp-bottom-border" class="position-absolute bg-white lp-border"></div>
-
-    <!-- Profile badge: Photo and Social media -->
-    <div id="lp-content" class="position-relative d-flex flex-column justify-content-center align-items-center">
-      <img src="images/bhuvan_ai.png" alt="Bhuvaneshwaran" class="rounded-circle" style="height: 250px;width: 250px;">
-      <h1 class="d-block py-3">BHUVANESHWARAN</h1>
-      <div id="lp-contact-icons" class="d-flex flex-wrap  justify-content-center align-items-center">
-        <a class="circle rounded-circle text-white d-flex justify-content-center align-items-center"
-          href="https://www.linkedin.com/in/isbhuvan/" aria-label="LinkedIn" target="_blank"><i
-            class="icon-linkedin"></i></a>
-        <a class="circle rounded-circle text-white d-flex justify-content-center align-items-center"
-          href="https://github.com/isbhuvan/" aria-label="GitHub" target="_blank"><i class="icon-github"></i></a>
-      </div>
-    </div>
 
     <!-- Scroll Down arrow to view sections -->
     <div class="scroll-arrow-container position-absolute mb-0">
@@ -357,8 +359,8 @@
 
               <div class="resume-item">
                 <span class="resume-year text-uppercase">2015 - 2023</span>
-                <div class="resume-btn"><a class="plus collapsed" data-bs-toggle="collapse" href="#work-tcs" role="button"
-                    aria-label="work-tcs" aria-expanded="false" aria-controls="work-tcs"></a></div>
+                <div class="resume-btn"><a class="plus collapsed" data-bs-toggle="collapse" href="#work-tcs"
+                    role="button" aria-label="work-tcs" aria-expanded="false" aria-controls="work-tcs"></a></div>
                 <div class="profile">
                   <h4 class="profile-title text-uppercase">CLOUD AUTOMATION ENGINEER - TCS</h4>
                   <div class="profile-detail text-grey collapse" id="work-tcs">
@@ -413,8 +415,9 @@
 
               <div class="resume-item">
                 <span class="resume-year text-uppercase">2014 - 2015</span>
-                <div class="resume-btn"><a class="plus collapsed" data-bs-toggle="collapse" href="#work-sastra" role="button"
-                    aria-label="Web Developer" aria-expanded="false" aria-controls="work-sastra"></a></div>
+                <div class="resume-btn"><a class="plus collapsed" data-bs-toggle="collapse" href="#work-sastra"
+                    role="button" aria-label="Web Developer" aria-expanded="false" aria-controls="work-sastra"></a>
+                </div>
                 <div class="profile">
                   <h4 class="profile-title text-uppercase">WEB DEVELOPER - SASTRA UNIVERSITY</h4>
                   <div class="profile-detail text-grey collapse" id="work-sastra">
@@ -442,8 +445,9 @@
               <h3>My Education<br>2011 - 2015</h3>
               <div class="resume-item">
                 <span class="resume-year text-uppercase">2010 - 2015</span>
-                <div class="resume-btn"><a class="plus collapsed" data-bs-toggle="collapse" href="#education-sastra" role="button"
-                    aria-label="Bachelors Degree" aria-expanded="false" aria-controls="education-sastra"></a></div>
+                <div class="resume-btn"><a class="plus collapsed" data-bs-toggle="collapse" href="#education-sastra"
+                    role="button" aria-label="Bachelors Degree" aria-expanded="false"
+                    aria-controls="education-sastra"></a></div>
                 <div class="profile">
                   <h4 class="profile-title text-uppercase">BACHELORS DEGREE - SASTRA UNIVERSITY</h4>
                   <div class="profile-detail text-grey collapse" id="education-sastra">
@@ -459,8 +463,9 @@
 
               <div class="resume-item">
                 <span class="resume-year text-uppercase">DEC 2022</span>
-                <div class="resume-btn"><a class="plus collapsed" data-bs-toggle="collapse" href="#cert-hashiCorp" role="button"
-                    aria-label="Terraform Associate" aria-expanded="false" aria-controls="cert-hashiCorp"></a></div>
+                <div class="resume-btn"><a class="plus collapsed" data-bs-toggle="collapse" href="#cert-hashiCorp"
+                    role="button" aria-label="Terraform Associate" aria-expanded="false"
+                    aria-controls="cert-hashiCorp"></a></div>
                 <div class="profile">
                   <h4 class="profile-title text-uppercase">HashiCorp Certified: Terraform Associate</h4>
                   <div class="profile-detail text-grey collapse" id="cert-hashiCorp">
@@ -470,8 +475,8 @@
               </div>
               <div class="resume-item">
                 <span class="resume-year text-uppercase">Aug 2022</span>
-                <div class="resume-btn"><a class="plus collapsed" data-bs-toggle="collapse" href="#cert-snow" role="button"
-                    aria-label="ServiceNow Certified System Administrator" aria-expanded="false"
+                <div class="resume-btn"><a class="plus collapsed" data-bs-toggle="collapse" href="#cert-snow"
+                    role="button" aria-label="ServiceNow Certified System Administrator" aria-expanded="false"
                     aria-controls="cert-snow"></a></div>
                 <div class="profile">
                   <h4 class="profile-title text-uppercase">ServiceNow Certified System Administrator</h4>
@@ -482,8 +487,9 @@
               </div>
               <div class="resume-item">
                 <span class="resume-year text-uppercase">NOV 2021</span>
-                <div class="resume-btn"><a class="plus collapsed" data-bs-toggle="collapse" href="#cert-ms-devops" role="button"
-                    aria-label="DevOps Engineer Expert" aria-expanded="false" aria-controls="cert-ms-devops"></a></div>
+                <div class="resume-btn"><a class="plus collapsed" data-bs-toggle="collapse" href="#cert-ms-devops"
+                    role="button" aria-label="DevOps Engineer Expert" aria-expanded="false"
+                    aria-controls="cert-ms-devops"></a></div>
                 <div class="profile">
                   <h4 class="profile-title text-uppercase">Microsoft Certified: DevOps Engineer Expert</h4>
                   <div class="profile-detail text-grey collapse" id="cert-ms-devops">
@@ -494,9 +500,9 @@
 
               <div class="resume-item">
                 <span class="resume-year text-uppercase">APR 2016</span>
-                <div class="resume-btn"><a class="plus collapsed" data-bs-toggle="collapse" href="#cert-itil" role="button"
-                    aria-label="ITIL FOUNDATION CERTIFICATE IN IT SERVICE MANAGEMENT" aria-expanded="false"
-                    aria-controls="cert-itil"></a></div>
+                <div class="resume-btn"><a class="plus collapsed" data-bs-toggle="collapse" href="#cert-itil"
+                    role="button" aria-label="ITIL FOUNDATION CERTIFICATE IN IT SERVICE MANAGEMENT"
+                    aria-expanded="false" aria-controls="cert-itil"></a></div>
                 <div class="profile">
                   <h4 class="profile-title text-uppercase">ITIL® FOUNDATION CERTIFICATE IN IT SERVICE MANAGEMENT</h4>
                   <div class="profile-detail text-grey collapse" id="cert-itil">
@@ -510,8 +516,9 @@
               <h3>Volunteer<br>2011 - NOW</h3>
               <div class="resume-item">
                 <span class="resume-year text-uppercase">2015</span>
-                <div class="resume-btn"><a class="plus collapsed" data-bs-toggle="collapse" href="#vol-kuruksastra" role="button"
-                    aria-label="kuruksastra" aria-expanded="false" aria-controls="vol-kuruksastra"></a></div>
+                <div class="resume-btn"><a class="plus collapsed" data-bs-toggle="collapse" href="#vol-kuruksastra"
+                    role="button" aria-label="kuruksastra" aria-expanded="false" aria-controls="vol-kuruksastra"></a>
+                </div>
                 <div class="profile">
                   <h4 class="profile-title text-uppercase">HEAD OF HOSPITALITY: KURUKSASTRA'15</h4>
                   <div class="profile-detail text-grey collapse" id="vol-kuruksastra">
@@ -524,8 +531,8 @@
               </div>
               <div class="resume-item">
                 <span class="resume-year text-uppercase">2014-2015</span>
-                <div class="resume-btn"><a class="plus collapsed" data-bs-toggle="collapse" href="#vol-colosseum" role="button"
-                    aria-label="colosseum" aria-expanded="false" aria-controls="vol-colosseum"></a></div>
+                <div class="resume-btn"><a class="plus collapsed" data-bs-toggle="collapse" href="#vol-colosseum"
+                    role="button" aria-label="colosseum" aria-expanded="false" aria-controls="vol-colosseum"></a></div>
                 <div class="profile">
                   <h4 class="profile-title text-uppercase">HEAD OF PUBLIC RELATIONS: COLOSSEUM'15</h4>
                   <div class="profile-detail text-grey collapse" id="vol-colosseum">
@@ -535,8 +542,8 @@
               </div>
               <div class="resume-item">
                 <span class="resume-year text-uppercase">2013-2015</span>
-                <div class="resume-btn"><a class="plus collapsed" data-bs-toggle="collapse" href="#vol-syh" role="button"
-                    aria-label="Share your hands" aria-expanded="false" aria-controls="vol-syh"></a></div>
+                <div class="resume-btn"><a class="plus collapsed" data-bs-toggle="collapse" href="#vol-syh"
+                    role="button" aria-label="Share your hands" aria-expanded="false" aria-controls="vol-syh"></a></div>
                 <div class="profile">
                   <h4 class="profile-title text-uppercase">STUDENT VOLUNTEER</h4>
                   <div class="profile-detail text-grey collapse" id="vol-syh">
@@ -553,11 +560,6 @@
     </div>
   </div>
 
-
-  <script>
-    /*Particle*/
-    particlesJS("particles", { particles: { number: { value: 350, density: { enable: !0, value_area: 800 } }, color: { value: "#1976D2" }, shape: { type: "circle", stroke: { width: 0, color: "#000000" }, polygon: { nb_sides: 10 }, image: { src: "img/github.svg", width: 100, height: 100 } }, opacity: { value: .5, random: !1, anim: { enable: !1, speed: 1, opacity_min: .1, sync: !1 } }, size: { value: 3, random: !0, anim: { enable: !1, speed: 40, size_min: .1, sync: !1 } }, line_linked: { enable: !0, distance: 150, color: "#1976D2", opacity: .4, width: 1 }, move: { enable: !0, speed: 6, direction: "none", random: !1, straight: !1, out_mode: "out", bounce: !1, attract: { enable: !1, rotateX: 600, rotateY: 1200 } } }, interactivity: { detect_on: "canvas", events: { onhover: { enable: !0, mode: "repulse" }, resize: !0 }, modes: { grab: { distance: 400, line_linked: { opacity: 1 } }, repulse: { distance: 50, duration: .4 }, push: { particles_nb: 4 }, remove: { particles_nb: 2 } } }, retina_detect: !0 });
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>

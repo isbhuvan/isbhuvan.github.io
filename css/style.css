@@ -56,6 +56,7 @@ h3 {
 #landing-page {
   z-index: 10;
   overflow-y: hidden;
+  background: radial-gradient(#0a0020, #000)
 }
 
 #particles-js {
@@ -108,6 +109,13 @@ h3 {
   }
 }
 
+#lp-content {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  z-index: 2;
+}
+
 #lp-content p {
   font-weight: 400;
   font-size: 2em;
@@ -121,7 +129,7 @@ h3 {
 
 .circle:hover {
   background: #fff;
-  color: #000;
+  color: #000!important;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
