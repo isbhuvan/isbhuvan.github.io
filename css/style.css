@@ -3,6 +3,13 @@ body {
   background-color: #000;
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
+  background: radial-gradient(#0a0020, #000);
+  background-attachment: fixed;
+}
+
+.offcanvas {
+  background: radial-gradient(rgb(10, 0, 32), rgb(0, 0, 0));
+  border-right:1px solid #fff !important;
 }
 
 li {
@@ -56,7 +63,6 @@ h3 {
 #landing-page {
   z-index: 10;
   overflow-y: hidden;
-  background: radial-gradient(#0a0020, #000)
 }
 
 #particles-js {
@@ -123,7 +129,7 @@ h3 {
 
 .circle {
   padding: 12px;
-  margin: 10px 20px;
+  margin: 10px 10px;
   border: 2px dotted #fff;
 }
 

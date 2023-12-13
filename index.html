@@ -32,23 +32,15 @@
       <img src="images/bhuvan_ai.png" alt="Bhuvaneshwaran" class="rounded-circle" style="height: 250px;width: 250px;">
       <h1 class="d-block py-3">BHUVANESHWARAN</h1>
       <div id="lp-contact-icons" class="d-flex">
-        <a class="circle rounded-circle text-white d-flex"
-          href="https://www.linkedin.com/in/isbhuvan/" aria-label="LinkedIn" target="_blank"><i
-            class="icon-linkedin"></i></a>
-        <a class="circle rounded-circle text-white d-flex"
-          href="mailto:isbhuvan@outlook.com" aria-label="email" target="_blank"><i class="icon-envelope2"></i></a>
-        <a class="circle rounded-circle text-white d-flex"
-          href="https://github.com/isbhuvan/" aria-label="GitHub" target="_blank"><i class="icon-github"></i></a>
+        <a class="circle rounded-circle text-white d-flex" href="https://www.linkedin.com/in/isbhuvan/"
+          aria-label="LinkedIn" target="_blank"><i class="icon-linkedin"></i></a>
+        <a class="circle rounded-circle text-white d-flex" href="mailto:isbhuvan@outlook.com" aria-label="email"
+          target="_blank"><i class="icon-envelope2"></i></a>
+        <a class="circle rounded-circle text-white d-flex" href="https://github.com/isbhuvan/" aria-label="GitHub"
+          target="_blank"><i class="icon-github"></i></a>
       </div>
 
     </div>
-
-    <!-- Particle JS for the home page backegorund animation
-    <div id="particles" class="position-absolute w-100 h-100">
-      <canvas class="particles-js-canvas-el">
-
-      </canvas>
-    </div> -->
 
     <!-- Home Page Borders -->
     <div id="lp-top-border" class="position-absolute bg-white lp-border"></div>
@@ -66,68 +58,78 @@
     </div>
   </div>
 
-  <header class="navbar navbar-dark sticky-top flex-md-nowrap p-0 col-md-3 d-lg-none me-0">
-    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
-      data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand text-center d-md-none" href="#">BHUVAN</a>
-  </header>
+  <nav class="navbar bg-transparent sticky-top">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">Offcanvas navbar</a> -->
 
-  <div class="container-fluid">
-    <div class="row">
-      <nav id="sidebarMenu"
-        class="col-md-3 col-lg-2 d-md-flex sidebar collapse justify-content-evenly flex-column position-sticky top-0 start-0 bottom-0 p-0 vh-100">
-        <div class="sidebar-name text-center">
-          <h2>BHUVAN</h2>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"
+        style="max-width: 250px;">
+        <div class="offcanvas-header justify-content-end">
+          <!-- <h5 class="offcanvas-title text-white text-center" id="offcanvasNavbarLabel">BHUVAN</h5> -->
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
 
-        <div class="position-sticky pt-3 mt-5 align-self-center">
-          <ul class="nav flex-column ">
+        <div class="navbar-brand text-center text-white">
+            BHUVAN
+        </div>
+
+        <div class="offcanvas-body d-flex flex-column align-items-center">
+
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
             <li class="nav-item py-1">
-              <a class="nav-link" href="#about">
+              <a class="nav-link text-white" href="#about">
                 <i class="icon-about"></i>
                 ABOUT
               </a>
             </li>
             <li class="nav-item py-1">
-              <a class="nav-link" href="#portfolio">
+              <a class="nav-link text-white" href="#portfolio">
                 <i class="icon-portfolio"></i>
                 PORTFOLIO
               </a>
             </li>
             <li class="nav-item py-1">
-              <a class="nav-link" href="#skills">
+              <a class="nav-link text-white" href="#skills">
                 <i class="icon-terminal"></i>
                 SKILLS
               </a>
             </li>
             <li class="nav-item py-1">
-              <a class="nav-link" href="#resume">
+              <a class="nav-link text-white" href="#resume">
                 <i class="icon-resume"></i>
                 RESUME
               </a>
             </li>
             <li class="nav-item py-1">
-              <a class="nav-link" href="#">
+              <a class="nav-link text-white" href="#">
                 DOWNLOAD CV
               </a>
             </li>
           </ul>
+
+          <div id="lp-contact-icons" class="d-flex justify-content-center align-items-center">
+            <a class="circle rounded-circle text-white d-flex justify-content-center align-items-center"
+              href="https://www.linkedin.com/in/isbhuvan/" target="_blank" aria-label="LinkedIn"><i
+                class="icon-linkedin"></i></a>
+            <a class="circle rounded-circle text-white d-flex" href="mailto:isbhuvan@outlook.com" aria-label="email"
+              target="_blank"><i class="icon-envelope2"></i></a>
+            <a class="circle rounded-circle text-white d-flex justify-content-center align-items-center"
+              href="https://github.com/isbhuvan/" target="_blank" aria-label="GitHub"><i class="icon-github"></i></a>
+          </div>
         </div>
 
-        <div id="lp-contact-icons" class="d-flex flex-wrap  justify-content-center align-items-center">
-          <a class="circle rounded-circle text-white d-flex justify-content-center align-items-center"
-            href="https://www.linkedin.com/in/isbhuvan/" target="_blank" aria-label="LinkedIn"><i
-              class="icon-linkedin"></i></a>
-          <a class="circle rounded-circle text-white d-flex justify-content-center align-items-center"
-            href="https://github.com/isbhuvan/" target="_blank" aria-label="GitHub"><i class="icon-github"></i></a>
-        </div>
+      </div>
+    </div>
+  </nav>
 
-      </nav>
-
-      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4" data-bs-spy="scroll" data-bs-target="#sidebarMenu">
-
+  <div class="container-fluid">
+    <div class="row">
+      <main class="ms-sm-auto px-md-4" data-bs-spy="scroll" data-bs-target="#sidebarMenu">
         <section id="about" class="pt-5">
           <div class="container">
             <div class="row">
@@ -153,7 +155,7 @@
                 </div>
               </div>
               <div class="col-md-2 d-none d-md-block">
-                <img src="images/bhuvan_ai.png" alt="" style="height: 512px;width: 512px;">
+                <img src="images/bhuvan_ai_trans.png" alt="" style="height: 512px;width: 512px;">
               </div>
             </div>
           </div>
