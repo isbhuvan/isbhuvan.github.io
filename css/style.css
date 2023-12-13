@@ -724,6 +724,10 @@ section hr {
   .collapsing{
     display: block!important;
   }
+
+  #lp-top-border,#lp-bottom-border,#lp-left-border,#lp-right-border {
+    display: none;
+  }
 }
 
 .resume-btn {
