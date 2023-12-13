@@ -714,6 +714,16 @@ section hr {
     left: 0;
     margin: 0;
   }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .collapse {
+    display: block!important;
+  }
+  .collapsing{
+    display: block!important;
+  }
 }
 
 .resume-btn {
