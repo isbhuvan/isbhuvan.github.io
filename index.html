@@ -58,28 +58,26 @@
     </div>
   </div>
 
-  <nav class="navbar bg-transparent sticky-top">
+  <nav class="navbar bg-transparent sticky-top"  id="sidebarMenu" >
     <div class="container-fluid">
-      <!-- <a class="navbar-brand" href="#">Offcanvas navbar</a> -->
 
       <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"
         style="max-width: 250px;">
         <div class="offcanvas-header justify-content-end">
-          <!-- <h5 class="offcanvas-title text-white text-center" id="offcanvasNavbarLabel">BHUVAN</h5> -->
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
         </div>
 
         <div class="navbar-brand text-center text-white">
-            BHUVAN
+          BHUVAN
         </div>
 
         <div class="offcanvas-body d-flex flex-column align-items-center">
-
           <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
             <li class="nav-item py-1">
               <a class="nav-link text-white" href="#about">
@@ -127,9 +125,9 @@
     </div>
   </nav>
 
-  <div class="container-fluid">
+  <div class="container-fluid position-relative" data-bs-spy="scroll" data-bs-target="#sidebarMenu">
     <div class="row">
-      <main class="ms-sm-auto px-md-4" data-bs-spy="scroll" data-bs-target="#sidebarMenu">
+      <main class="ms-sm-auto px-md-4">
         <section id="about" class="pt-5">
           <div class="container">
             <div class="row">

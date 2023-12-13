@@ -293,6 +293,10 @@ h3 {
   color: #1976D2;
 }
 
+a.nav-link.text-white.active {
+  color: #1976d2 !important;
+}
+
 /*-------------------------SECTION--------------------------------------------*/
 
 section hr {
