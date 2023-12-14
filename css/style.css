@@ -775,6 +775,7 @@ section hr {
   text-align: center;
   font-weight: 700;
   border-radius: 4px;
+  text-transform: uppercase;
 }
 
 @media (min-width: 568px) {
@@ -817,6 +818,7 @@ section hr {
   height: 40px;
   background-color: #1e1e1e;
   border-radius: 4px;
+  display: none;
 }
 
 
@@ -845,6 +847,12 @@ section hr {
   content: '+';
 }
 
+@media (min-width: 768px) {
+  .resume-btn {
+    display: block;
+  }
+}
+
 .profile {
   padding: 10px 0px 10px 0;
   border: 1px solid #6e6e6e;
@@ -862,6 +870,10 @@ section hr {
     width: calc(100% - 210px);
     margin-left: 210px;
   }
+}
+
+.profile-title {
+  text-transform: uppercase;
 }
 
 @media (max-width: 567px) {
