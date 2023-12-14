@@ -1,8 +1,4 @@
 /*-------------------------GLOBAL STYLES--------------------------------------------*/
-html {
-  height: 100%
-}
-
 body {
   font-family: 'Lato', sans-serif;
   color: #fff;
@@ -13,8 +9,6 @@ body {
   padding: 0%;
   overflow-x: hidden;
   min-height: 100%;
-  width: 100%;
-  height: 100%;
 }
 
 li {
