@@ -376,6 +376,7 @@ section hr {
 .section-header p {
   color: #a1a1a1;
   font-size: 18px;
+  text-align: center;
 }
 
 .section-header h2,
@@ -384,6 +385,9 @@ section hr {
   font-weight: 400;
   color: #1976D2;
   line-height: 32px;
+  text-align: center;
+  padding-top: 0.75rem; 
+  padding-bottom: 0.75rem; 
 }
 
 .contact-detail ul li {
