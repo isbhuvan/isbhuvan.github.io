@@ -70,7 +70,7 @@ h3 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
+  min-height: 500px;
   z-index: 10;
   overflow-y: hidden;
 }
