@@ -24,41 +24,40 @@
 
 <body>
   <!-- Home Page-->
-  <div id="landing-page" class="d-flex flex-column justify-content-center align-items-center w-100 min-vh-100">
+  <div id="landing-page">
 
+    <!-- Profile badge: Photo and Social media -->
+    <div id="profile-badge">
+      <img src="images/bhuvan_ai.png" alt="Bhuvaneshwaran" style="height: 250px;width: 250px;border-radius: 50%;">
+      <h1>BHUVANESHWARAN</h1>
+      <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/isbhuvan/" aria-label="LinkedIn" target="_blank"><i class="icon-linkedin"></i></a>
+        <a href="mailto:isbhuvan@outlook.com" aria-label="email" target="_blank"><i class="icon-envelope2"></i></a>
+        <a href="https://github.com/isbhuvan/" aria-label="GitHub" target="_blank"><i class="icon-github"></i></a>
+      </div>
+    </div>
+
+    <!-- Landing Page Background Animation -->
     <div id="stars-container">
       <div id='stars'></div>
       <div id='stars2'></div>
       <div id='stars3'></div>
     </div>
-    <!-- Profile badge: Photo and Social media -->
-    <div id="lp-content" class="d-flex align-items-center justify-content-center flex-column">
-
-      <img src="images/bhuvan_ai.png" alt="Bhuvaneshwaran" class="rounded-circle" style="height: 250px;width: 250px;">
-      <h1 class="d-block py-3">BHUVANESHWARAN</h1>
-      <div id="lp-contact-icons" class="d-flex">
-        <a class="circle rounded-circle text-white d-flex" href="https://www.linkedin.com/in/isbhuvan/"
-          aria-label="LinkedIn" target="_blank"><i class="icon-linkedin"></i></a>
-        <a class="circle rounded-circle text-white d-flex" href="mailto:isbhuvan@outlook.com" aria-label="email"
-          target="_blank"><i class="icon-envelope2"></i></a>
-        <a class="circle rounded-circle text-white d-flex" href="https://github.com/isbhuvan/" aria-label="GitHub"
-          target="_blank"><i class="icon-github"></i></a>
-      </div>
-
-    </div>
 
     <!-- Home Page Borders -->
-    <div id="lp-top-border" class="position-absolute bg-white lp-border"></div>
-    <div id="lp-right-border" class="position-absolute bg-white lp-border"></div>
-    <div id="lp-left-border" class="position-absolute bg-white lp-border"></div>
-    <div id="lp-bottom-border" class="position-absolute bg-white lp-border"></div>
+    <div id="lp-border">
+      <span id="lp-top-border"></span>
+      <span id="lp-right-border"></span>
+      <span id="lp-left-border"></span>
+      <span id="lp-bottom-border"></span>
+    </div>
 
     <!-- Scroll Down arrow to view sections -->
-    <div class="scroll-arrow-container position-absolute mb-0">
+    <div class="scroll-arrow-container">
       <a href="#about" aria-label="scrollDown">
-        <span id="lp-arrow-one" class="scroll-arrow d-block"></span>
-        <span id="lp-arrow-two" class="scroll-arrow d-block"></span>
-        <span id="lp-arrow-three" class="scroll-arrow d-block"></span>
+        <span id="lp-arrow-one" class="scroll-arrow"></span>
+        <span id="lp-arrow-two" class="scroll-arrow"></span>
+        <span id="lp-arrow-three" class="scroll-arrow"></span>
       </a>
     </div>
   </div>
@@ -234,8 +233,9 @@
                   </div>
                   <h3 class="card-title text-left">Azure ASG</h3>
                   <hr>
-                  <p class="card-text">Terraform module to manage Azure  Application Security Group</p>
-                  <a class="card-link stretched-link" target="_blank" aria-label="terraform-azurerm-application-security-group"
+                  <p class="card-text">Terraform module to manage Azure Application Security Group</p>
+                  <a class="card-link stretched-link" target="_blank"
+                    aria-label="terraform-azurerm-application-security-group"
                     href="https://github.com/isbhuvan/terraform-azurerm-application-security-group"></a>
                 </div>
               </div>
@@ -404,8 +404,9 @@
 
               <div class="resume-item">
                 <span class="resume-year text-uppercase">2015 - 2023</span>
-                <div class="resume-btn d-md-block d-none"><a class="plus collapsed" data-bs-toggle="collapse" href="#work-tcs"
-                    role="button" aria-label="work-tcs" aria-expanded="false" aria-controls="work-tcs"></a></div>
+                <div class="resume-btn d-md-block d-none"><a class="plus collapsed" data-bs-toggle="collapse"
+                    href="#work-tcs" role="button" aria-label="work-tcs" aria-expanded="false"
+                    aria-controls="work-tcs"></a></div>
                 <div class="profile">
                   <h4 class="profile-title text-uppercase">CLOUD AUTOMATION ENGINEER - TCS</h4>
                   <div class="profile-detail text-grey collapse" id="work-tcs">
@@ -460,8 +461,9 @@
 
               <div class="resume-item">
                 <span class="resume-year text-uppercase">2014 - 2015</span>
-                <div class="resume-btn d-md-block d-none"><a class="plus collapsed" data-bs-toggle="collapse" href="#work-sastra"
-                    role="button" aria-label="Web Developer" aria-expanded="false" aria-controls="work-sastra"></a>
+                <div class="resume-btn d-md-block d-none"><a class="plus collapsed" data-bs-toggle="collapse"
+                    href="#work-sastra" role="button" aria-label="Web Developer" aria-expanded="false"
+                    aria-controls="work-sastra"></a>
                 </div>
                 <div class="profile">
                   <h4 class="profile-title text-uppercase">WEB DEVELOPER - SASTRA UNIVERSITY</h4>
@@ -490,8 +492,8 @@
               <h3>My Education<br>2011 - 2015</h3>
               <div class="resume-item">
                 <span class="resume-year text-uppercase">2010 - 2015</span>
-                <div class="resume-btn d-md-block d-none"><a class="plus collapsed" data-bs-toggle="collapse" href="#education-sastra"
-                    role="button" aria-label="Bachelors Degree" aria-expanded="false"
+                <div class="resume-btn d-md-block d-none"><a class="plus collapsed" data-bs-toggle="collapse"
+                    href="#education-sastra" role="button" aria-label="Bachelors Degree" aria-expanded="false"
                     aria-controls="education-sastra"></a></div>
                 <div class="profile">
                   <h4 class="profile-title text-uppercase">BACHELORS DEGREE - SASTRA UNIVERSITY</h4>
@@ -508,8 +510,8 @@
 
               <div class="resume-item">
                 <span class="resume-year text-uppercase">DEC 2022</span>
-                <div class="resume-btn d-md-block d-none"><a class="plus collapsed" data-bs-toggle="collapse" href="#cert-hashiCorp"
-                    role="button" aria-label="Terraform Associate" aria-expanded="false"
+                <div class="resume-btn d-md-block d-none"><a class="plus collapsed" data-bs-toggle="collapse"
+                    href="#cert-hashiCorp" role="button" aria-label="Terraform Associate" aria-expanded="false"
                     aria-controls="cert-hashiCorp"></a></div>
                 <div class="profile">
                   <h4 class="profile-title text-uppercase">HashiCorp Certified: Terraform Associate</h4>
@@ -520,9 +522,9 @@
               </div>
               <div class="resume-item">
                 <span class="resume-year text-uppercase">Aug 2022</span>
-                <div class="resume-btn d-md-block d-none"><a class="plus collapsed" data-bs-toggle="collapse" href="#cert-snow"
-                    role="button" aria-label="ServiceNow Certified System Administrator" aria-expanded="false"
-                    aria-controls="cert-snow"></a></div>
+                <div class="resume-btn d-md-block d-none"><a class="plus collapsed" data-bs-toggle="collapse"
+                    href="#cert-snow" role="button" aria-label="ServiceNow Certified System Administrator"
+                    aria-expanded="false" aria-controls="cert-snow"></a></div>
                 <div class="profile">
                   <h4 class="profile-title text-uppercase">ServiceNow Certified System Administrator</h4>
                   <div class="profile-detail text-grey collapse" id="cert-snow">
@@ -532,8 +534,8 @@
               </div>
               <div class="resume-item">
                 <span class="resume-year text-uppercase">NOV 2021</span>
-                <div class="resume-btn d-md-block d-none"><a class="plus collapsed" data-bs-toggle="collapse" href="#cert-ms-devops"
-                    role="button" aria-label="DevOps Engineer Expert" aria-expanded="false"
+                <div class="resume-btn d-md-block d-none"><a class="plus collapsed" data-bs-toggle="collapse"
+                    href="#cert-ms-devops" role="button" aria-label="DevOps Engineer Expert" aria-expanded="false"
                     aria-controls="cert-ms-devops"></a></div>
                 <div class="profile">
                   <h4 class="profile-title text-uppercase">Microsoft Certified: DevOps Engineer Expert</h4>
@@ -545,8 +547,8 @@
 
               <div class="resume-item">
                 <span class="resume-year text-uppercase">APR 2016</span>
-                <div class="resume-btn d-md-block d-none"><a class="plus collapsed" data-bs-toggle="collapse" href="#cert-itil"
-                    role="button" aria-label="ITIL FOUNDATION CERTIFICATE IN IT SERVICE MANAGEMENT"
+                <div class="resume-btn d-md-block d-none"><a class="plus collapsed" data-bs-toggle="collapse"
+                    href="#cert-itil" role="button" aria-label="ITIL FOUNDATION CERTIFICATE IN IT SERVICE MANAGEMENT"
                     aria-expanded="false" aria-controls="cert-itil"></a></div>
                 <div class="profile">
                   <h4 class="profile-title text-uppercase">ITIL® FOUNDATION CERTIFICATE IN IT SERVICE MANAGEMENT</h4>
@@ -561,8 +563,9 @@
               <h3>Volunteer<br>2011 - NOW</h3>
               <div class="resume-item">
                 <span class="resume-year text-uppercase">2015</span>
-                <div class="resume-btn d-md-block d-none"><a class="plus collapsed" data-bs-toggle="collapse" href="#vol-kuruksastra"
-                    role="button" aria-label="kuruksastra" aria-expanded="false" aria-controls="vol-kuruksastra"></a>
+                <div class="resume-btn d-md-block d-none"><a class="plus collapsed" data-bs-toggle="collapse"
+                    href="#vol-kuruksastra" role="button" aria-label="kuruksastra" aria-expanded="false"
+                    aria-controls="vol-kuruksastra"></a>
                 </div>
                 <div class="profile">
                   <h4 class="profile-title text-uppercase">HEAD OF HOSPITALITY: KURUKSASTRA'15</h4>
@@ -576,8 +579,9 @@
               </div>
               <div class="resume-item">
                 <span class="resume-year text-uppercase">2014-2015</span>
-                <div class="resume-btn d-md-block d-none"><a class="plus collapsed" data-bs-toggle="collapse" href="#vol-colosseum"
-                    role="button" aria-label="colosseum" aria-expanded="false" aria-controls="vol-colosseum"></a></div>
+                <div class="resume-btn d-md-block d-none"><a class="plus collapsed" data-bs-toggle="collapse"
+                    href="#vol-colosseum" role="button" aria-label="colosseum" aria-expanded="false"
+                    aria-controls="vol-colosseum"></a></div>
                 <div class="profile">
                   <h4 class="profile-title text-uppercase">HEAD OF PUBLIC RELATIONS: COLOSSEUM'15</h4>
                   <div class="profile-detail text-grey collapse" id="vol-colosseum">
@@ -587,8 +591,9 @@
               </div>
               <div class="resume-item">
                 <span class="resume-year text-uppercase">2013-2015</span>
-                <div class="resume-btn d-md-block d-none"><a class="plus collapsed" data-bs-toggle="collapse" href="#vol-syh"
-                    role="button" aria-label="Share your hands" aria-expanded="false" aria-controls="vol-syh"></a></div>
+                <div class="resume-btn d-md-block d-none"><a class="plus collapsed" data-bs-toggle="collapse"
+                    href="#vol-syh" role="button" aria-label="Share your hands" aria-expanded="false"
+                    aria-controls="vol-syh"></a></div>
                 <div class="profile">
                   <h4 class="profile-title text-uppercase">STUDENT VOLUNTEER</h4>
                   <div class="profile-detail text-grey collapse" id="vol-syh">
