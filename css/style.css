@@ -20,6 +20,9 @@ a {
   outline: none;
 }
 
+h1 {
+  font-size: 2em;
+}
 h2,
 h3,
 h4 {
@@ -179,7 +182,7 @@ h3 {
   position: absolute;
   bottom: 10%;
   left: 50%;
-  z-index: 5;
+  z-index: 10;
 }
 
 .scroll-arrow {
