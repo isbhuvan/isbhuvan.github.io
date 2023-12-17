@@ -418,10 +418,12 @@ section hr {
 .project {
   background: #1e1e1e;
   box-shadow: 0 0 15px rgba(0, 0, 200, .1);
-  border-style: inset;
+  border-style: solid;
   transition: all 0.2s ease;
   margin: 10px;
   max-width: 250px;
+  color: #fff;
+  border-color: rgb(248, 249, 250);
 }
 
 .project:hover {
@@ -442,6 +444,10 @@ section hr {
 .ribbon {
   width: 150px;
   height: 150px;
+  overflow: hidden;
+  position: absolute;
+  top: 0%;
+  right: 0%;
 }
 
 .ribbon span {
@@ -451,6 +457,11 @@ section hr {
   background-color: #1976D2;
   font: 15px 'Lato', sans-serif;
   transform: rotate(30deg);
+  position: absolute;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  display: block;
 }
 
 .ribbon span:after {
@@ -473,6 +484,10 @@ section hr {
   border: 1px dashed rgba(255, 255, 255, 0.9);
   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card-title {
+  text-align: left;
 }
 
 .button {
@@ -906,6 +921,8 @@ section hr {
 
 .profile-detail p {
   padding: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .resume-item li {
