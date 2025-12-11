@@ -1,0 +1,61 @@
+/* ============================================================
+   GLOBAL RESET
+   A clean, modern base reset for portfolio projects.
+   Only foundational overrides — no layout or styling.
+============================================================ */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove default text-decoration */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default list bullets */
+li {
+  list-style: none;
+}
+
+/* Ensure inline elements behave consistently */
+img,
+ion-icon,
+a,
+button,
+time,
+span {
+  display: block;
+}
+
+/* Buttons inherit font & remove browser defaults */
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* Inputs & textareas reset */
+input,
+textarea {
+  display: block;
+  width: 100%;
+  background: none;
+  font: inherit;
+  border: none;     
+  outline: none;   
+}
+
+:root {
+  --font-primary: 'Poppins', sans-serif;
+}
+
+html {
+  font-family: var(--font-primary);
+  scroll-behavior: smooth;
+}
