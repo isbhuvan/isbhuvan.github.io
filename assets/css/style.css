@@ -66,6 +66,14 @@ body {
   background-color: rgb(13, 17, 23)
 }
 
+h2,
+h3,
+h4,
+h5 {
+  color: hsl(0, 0%, 98%);
+  text-transform: capitalize;
+}
+
 /* ============================================================
    MAIN LAYOUT WRAPPER
 ============================================================ */
@@ -92,7 +100,7 @@ main {
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1024px) {
   main {
     max-width: 1200px;
     margin-inline: auto;
@@ -100,5 +108,90 @@ main {
     justify-content: center;
     align-items: stretch;
     gap: 25px;
+  }
+}
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: hsla(240, 1%, 17%, 0.75);
+  backdrop-filter: blur(10px);
+  border: 1px solid hsl(0, 0%, 22%);
+  border-radius: 12px 12px 0 0;
+  box-shadow: var(--shadow-2);
+  z-index: 5;
+}
+
+.navbar-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.navbar-link {
+  color: hsl(0, 0%, 84%);
+  font-size: 11px;
+  padding: 20px 7px;
+  transition: color 0.25s ease;
+}
+
+.navbar-link:hover,
+.navbar-link:focus {
+  color: hsla(0, 0%, 84%, 0.7);
+}
+
+.navbar-link.active {
+  color: hsl(45, 100%, 72%);
+}
+
+@media (min-width: 580px) {
+  .navbar {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .navbar-list {
+    gap: 20px;
+  }
+
+  .navbar-link {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-link {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    margin-bottom: 15px;
+    max-height: 112px;
+    overflow: hidden;
+    transition: var(--transition-2);
+    position: sticky;
+    top: 60px;
+    max-height: max-content;
+    height: 100%;
+    margin-bottom: 0;
+    padding-top: 60px;
+    z-index: 1;
+    width: auto;
+    border-radius: 12px 12px 12px 12px;
+  }
+
+  .navbar-list {
+    gap: 30px;
+    padding: 0 20px;
+    flex-direction: column;
+  }
+
+  .navbar-link {
+    font-weight: 500;
   }
 }
