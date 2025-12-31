@@ -2,6 +2,9 @@ name: Lint Markdown
 
 on: [push, pull_request]
 
+permissions:
+  contents: read
+
 jobs:
   markdownlint:
     runs-on: ubuntu-latest
