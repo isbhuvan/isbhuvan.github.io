@@ -1,0 +1,346 @@
+* {
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #212529;
+    --section-bg: #f8f9fa;
+    --sidebar-bg: #0d6efd;
+    /* Light theme sidebar */
+    --card-bg: #ffffff;
+}
+
+[data-bs-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #e9ecef;
+    --section-bg: #1e1e1e;
+    --sidebar-bg: hsl(240, 2%, 12%);
+    /* Dark theme sidebar */
+    --card-bg: #1f1f1f;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    padding: 4rem 1rem;
+    background-color: var(--bg-color);
+}
+
+section.bg-light {
+    background-color: var(--section-bg) !important;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 260px;
+    background-color: var(--sidebar-bg);
+    padding: 1.5rem;
+    color: #fff;
+}
+
+.sidebar a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 0.75rem 0;
+    font-weight: 500;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+@media (min-width: 992px) {
+    .main-content {
+        margin-left: 260px;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header i {
+    font-size: 2.25rem;
+    color: var(--sidebar-bg);
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+[data-bs-theme="dark"] .section-header i {
+    color: #6ea8fe;
+}
+
+.section-header h2 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.section-header p {
+    font-size: 0.95rem;
+    opacity: 0.75;
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+.content-wrapper {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#about .text-muted {
+    letter-spacing: 0.04em;
+}
+
+#skills .card {
+    border: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+[data-bs-theme="dark"] #skills .card {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+#skills .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+}
+
+.resume-timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.resume-timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 8px;
+    width: 2px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+[data-bs-theme="dark"] .resume-timeline::before {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -1px;
+    top: 0.4rem;
+    width: 14px;
+    height: 14px;
+    background-color: #0d6efd;
+    border-radius: 50%;
+}
+
+.timeline-content {
+    padding-left: 2rem;
+}
+
+.timeline-content h5 {
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.offcanvas-body {
+    padding-top: 4.5rem;
+    /* matches navbar height */
+}
+
+.offcanvas {
+    height: 100vh;
+}
+
+.offcanvas-body a {
+    font-size: 1.1rem;
+    padding: 0.75rem 0;
+}
+
+.about-tagline {
+    color: #6c757d;
+    /* Bootstrap muted for light theme */
+    font-weight: 500;
+}
+
+[data-bs-theme="dark"] .about-tagline {
+    color: #adb5bd;
+    /* Higher contrast gray for dark mode */
+}
+
+.resume-meta {
+    color: #6c757d;
+    /* Light theme muted */
+    font-weight: 500;
+}
+
+[data-bs-theme="dark"] .resume-meta {
+    color: #adb5bd;
+    /* Higher contrast for dark theme */
+}
+
+.about-focus {
+    color: #6c757d;
+    /* light theme */
+    font-weight: 500;
+}
+
+[data-bs-theme="dark"] .about-focus {
+    color: #adb5bd;
+    /* readable in dark theme */
+}
+
+.about-focus {
+    border-left: 3px solid var(--timeline-marker);
+    padding-left: 0.75rem;
+}
+
+.skill-card {
+    border: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+[data-bs-theme="dark"] .skill-card {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.skill-tools {
+    margin-top: 0.75rem;
+}
+
+.skill-tools .badge {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+    font-weight: 500;
+    margin: 0.15rem;
+}
+
+[data-bs-theme="dark"] .skill-tools .badge {
+    background-color: rgba(110, 168, 254, 0.15);
+    color: #6ea8fe;
+}
+
+/* Core Skill Indicator */
+.core-skill {
+    border-left: 4px solid var(--timeline-marker);
+}
+
+.project-card {
+    border: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+[data-bs-theme="dark"] .project-card {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.project-tools {
+    margin-top: 0.75rem;
+}
+
+.project-tools .badge {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+    font-weight: 500;
+    margin: 0.15rem;
+}
+
+[data-bs-theme="dark"] .project-tools .badge {
+    background-color: rgba(110, 168, 254, 0.15);
+    color: #6ea8fe;
+}
+
+.skill-level {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.skill-level.core {
+    background-color: rgba(13, 110, 253, 0.15);
+    color: #0d6efd;
+}
+
+.skill-level.advanced {
+    background-color: rgba(25, 135, 84, 0.15);
+    color: #198754;
+}
+
+[data-bs-theme="dark"] .skill-level.core {
+    background-color: rgba(110, 168, 254, 0.2);
+    color: #6ea8fe;
+}
+
+[data-bs-theme="dark"] .skill-level.advanced {
+    background-color: rgba(75, 192, 192, 0.2);
+    color: #75c0c0;
+}
+
+.skill-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: var(--timeline-marker);
+}
+
+.skill-link:hover {
+    text-decoration: underline;
+}
+
+.theme-switcher {
+  user-select: none;
+}
+
+.theme-switcher .form-check-input {
+  cursor: pointer;
+}
+
+.sidebar-title {
+  display: inline-block;
+  margin-top: 0.25rem;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 999px;
+
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
