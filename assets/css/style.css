@@ -413,3 +413,41 @@ section.bg-light {
     border-left: 3px solid #6ea8fe;
     padding-left: 0.75rem;
 }
+
+.site-footer {
+  padding: 3rem 0 2rem;
+  background-color: var(--section-bg);
+}
+
+[data-theme="dark"] .site-footer {
+  background-color: #161616;
+}
+
+.site-footer .contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.site-footer .contact-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  text-decoration: none;
+
+  background-color: rgba(13, 110, 253, 0.1);
+  color: #0d6efd;
+}
+
+.site-footer .contact-link:hover {
+  background-color: rgba(13, 110, 253, 0.2);
+}
+
+[data-theme="dark"] .site-footer .contact-link {
+  background-color: rgba(110, 168, 254, 0.2);
+  color: #6ea8fe;
+}
