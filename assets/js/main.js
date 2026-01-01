@@ -37,3 +37,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+window.addEventListener("load", function() {
+  const preloader = document.getElementById("preloader");
+  
+  // Start the fade-out
+  preloader.classList.add("preloader-hidden");
+
+  // Optional: Completely remove from DOM after the fade (0.5s)
+  setTimeout(() => {
+    preloader.style.display = "none";
+  }, 500); 
+});
