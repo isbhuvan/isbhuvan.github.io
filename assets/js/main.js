@@ -49,3 +49,10 @@ window.addEventListener("load", function() {
     preloader.style.display = "none";
   }, 500); 
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+    target: "#mainNav",
+    offset: 100
+  });
+});
