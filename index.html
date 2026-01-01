@@ -28,7 +28,7 @@
   </script>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100" tabindex="0">
+<body>
   <!-- Preloader -->
   <div id="preloader">
     <div class="loader-wrapper">
@@ -39,7 +39,6 @@
       </div>
     </div>
   </div>
-
 
   <!-- Mobile Navbar -->
   <nav class="navbar navbar-dark bg-primary fixed-top mobile-nav">
@@ -77,7 +76,6 @@
     </div>
   </div>
 
-
   <!-- Desktop Sidebar -->
   <aside class="sidebar">
 
@@ -93,26 +91,22 @@
     <hr>
 
     <!-- Navigation -->
-    <nav class="mt-3">
-      <a href="#about">
+    <nav id="sidebar-nav" class="nav flex-column mt-3">
+      <a class="nav-link" href="#about">
         <i class="bi bi-person me-2"></i>About
       </a>
-      <a href="#skills">
+      <a class="nav-link" href="#skills">
         <i class="bi bi-tools me-2"></i>Skills
       </a>
-      <a href="#projects">
+      <a class="nav-link" href="#projects">
         <i class="bi bi-kanban me-2"></i>Projects
       </a>
-      <a href="#resume">
+      <a class="nav-link" href="#resume">
         <i class="bi bi-file-earmark-text me-2"></i>Resume
       </a>
     </nav>
-    <hr>
 
-    <!-- Theme Toggle -->
-    <!-- <button class="btn btn-light w-100 mt-3 theme-toggle" onclick="toggleTheme()">
-      🌙
-    </button> -->
+    <hr>
 
     <div class="d-flex align-items-center theme-switcher">
       <span class="me-2">☀️</span>
@@ -127,9 +121,8 @@
 
   </aside>
 
-
   <!-- Main Content -->
-  <main class="main-content">
+  <main class="main-content" data-bs-spy="scroll" data-bs-target="#sidebar-nav" data-bs-offset="0" tabindex="0">
 
     <!-- About -->
     <section id="about">
@@ -215,7 +208,7 @@
     </section>
 
     <!-- Skills -->
-    <section id="skills" class="py-5 bg-light">
+    <section id="skills" class="py-5">
       <div class="container">
         <div class="content-wrapper">
           <div class="section-header">
@@ -223,7 +216,6 @@
             <h2>Skills</h2>
             <p>Core capabilities across platform engineering, automation, delivery, and operations.</p>
           </div>
-          <h2 class="text-center mb-5">Skills & Expertise</h2>
 
           <div class="row align-items-center g-5">
 
@@ -299,7 +291,7 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects">
+    <section id="projects" class="py-5">
       <div class="container">
         <div class="content-wrapper">
 
@@ -390,7 +382,7 @@
 
 
     <!-- Resume -->
-    <section id="resume" class="bg-light">
+    <section id="resume">
       <div class="container">
         <div class="content-wrapper">
 
@@ -506,7 +498,6 @@
         </div>
       </div>
     </section>
-
 
   </main>
 
