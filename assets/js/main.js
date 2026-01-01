@@ -56,3 +56,28 @@ document.addEventListener("DOMContentLoaded", () => {
     offset: 100
   });
 });
+
+document.querySelector(".theme-toggle-btn")?.addEventListener("click", () => {
+  const root = document.documentElement;
+  const current = root.getAttribute("data-bs-theme") || "light";
+  const next = current === "dark" ? "light" : "dark";
+
+  root.setAttribute("data-bs-theme", next);
+  localStorage.setItem("theme", next);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const main = document.querySelector(".main-content");
+
+  // Desktop sidebar
+  new bootstrap.ScrollSpy(main, {
+    target: "#sidebar-nav",
+    offset: 64
+  });
+
+  // Mobile bottom nav
+  new bootstrap.ScrollSpy(main, {
+    target: "#mobileNav",
+    offset: 64
+  });
+});
