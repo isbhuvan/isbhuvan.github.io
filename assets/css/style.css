@@ -24,7 +24,7 @@ html {
 }
 
 .main-content {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 
@@ -147,13 +147,9 @@ section.bg-light {
 
 .section-header i {
     font-size: 2.25rem;
-    color: var(--sidebar-bg);
+    color: #6ea8fe;
     margin-bottom: 0.5rem;
     display: inline-block;
-}
-
-[data-bs-theme="dark"] .section-header i {
-    color: #6ea8fe;
 }
 
 .section-header h2 {
@@ -415,39 +411,65 @@ section.bg-light {
 }
 
 .site-footer {
-  padding: 3rem 0 2rem;
-  background-color: var(--section-bg);
+    padding: 3rem 0 2rem;
+    background-color: var(--section-bg);
 }
 
 [data-theme="dark"] .site-footer {
-  background-color: #161616;
+    background-color: #161616;
 }
 
 .site-footer .contact-links {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .site-footer .contact-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  font-size: 1.25rem;
-  text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    text-decoration: none;
 
-  background-color: rgba(13, 110, 253, 0.1);
-  color: #0d6efd;
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
 }
 
 .site-footer .contact-link:hover {
-  background-color: rgba(13, 110, 253, 0.2);
+    background-color: rgba(13, 110, 253, 0.2);
 }
 
 [data-theme="dark"] .site-footer .contact-link {
-  background-color: rgba(110, 168, 254, 0.2);
-  color: #6ea8fe;
+    background-color: rgba(110, 168, 254, 0.2);
+    color: #6ea8fe;
+}
+
+.section-title {
+    display: inline-flex;
+    gap: 0.5rem;
+}
+
+.section-title i {
+    font-size: 1.5rem;
+}
+
+.section-title h2 {
+    margin: 0;
+}
+
+.section-divider {
+    width: 100px;
+    margin: 0.75rem auto 0;
+    border: none;
+    border-top: 2px solid  #6ea8fe;
+    ;
+}
+
+/* Dark mode */
+[data-theme="dark"] .section-divider {
+    border-top-color: #495057;
 }
