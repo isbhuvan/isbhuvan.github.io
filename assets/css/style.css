@@ -99,6 +99,9 @@ body {
     background-color: var(--sidebar-bg);
     padding: 1.5rem;
     color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
 .sidebar a {
